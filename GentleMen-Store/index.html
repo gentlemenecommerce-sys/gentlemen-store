@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GentleMen Store - One-Stop Store Khusus Pria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👔</text></svg>">
+</head>
+<body>
+    <!-- Header dan Navigasi -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwIDBDOC45NiAwIDAgOC45NiAwIDIwQzAgMzEuMDQgOC45NiA0MCAyMCA0MEMzMS4wNCA0MCA0MCAzMS4wNCA0MCAyMEM0MCA4Ljk2IDMxLjA0IDAgMjAgMFpNMjUgMzFMMjUgMjVIMzFMMzEgMTVIMjVMMjUgOUgxNUwxNSAxNUg5TDkgMjVIMTVMMzEgMzFaIiBmaWxsPSIjRDRBRjM3Ii8+Cjwvc3ZnPgo=" alt="G Logo">
+                </div>
+                <h1>GENTLEMEN</h1>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#categories">Kategori</a></li>
+                    <li><a href="#featured">Produk</a></li>
+                    <li><a href="#features">Fitur</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-icons">
+                <div class="search-icon" id="searchIcon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="user-icon" id="userIcon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="cart-icon-container">
+                    <i class="fas fa-shopping-bag" id="cartIcon"></i>
+                    <div class="cart-count" id="cartCount">0</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-logo">
+                <div class="logo-large">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwIDBDOC45NiAwIDAgOC45NiAwIDIwQzAgMzEuMDQgOC45NiA0MCAyMCA0MEMzMS4wNCA0MCA0MCAzMS4wNCA0MCAyMEM0MCA4Ljk2IDMxLjA0IDAgMjAgMFpNMjUgMzFMMjUgMjVIMzFMMzEgMTVIMjVMMjUgOUgxNUwxNSAxNUg5TDkgMjVIMTVMMzEgMzFaIiBmaWxsPSIjRDRBRjM3Ii8+Cjwvc3ZnPgo=" alt="G Logo">
+                    <span class="logo-text">GENTLEMEN</span>
+                </div>
+                <div class="tagline">E-COMMERCE FOR MEN</div>
+            </div>
+            <h2>Kebutuhan Pria <span>Premium</span> Dalam Satu Tempat</h2>
+            <p>GentleMen Store menyediakan kebutuhan pria dalam satu ekosistem dengan kurasi produk premium, harga transparan, dan pengalaman belanja maskulin yang rapi dan efisien.</p>
+            <a href="#categories" class="cta-button">Jelajahi Koleksi</a>
+        </div>
+    </section>
+
+    <!-- Kategori Produk -->
+    <section class="categories" id="categories">
+        <h2 class="section-title">Kategori Produk</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Alat Olahraga">
+                <div class="category-overlay">
+                    <h3>Alat Olahraga</h3>
+                    <p>Perlengkapan fitness dan olahraga premium untuk performa maksimal</p>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&auto=format&fit=crop&w=1374&q=80" alt="Skincare Pria">
+                <div class="category-overlay">
+                    <h3>Skincare Pria</h3>
+                    <p>Perawatan kulit khusus pria untuk tampilan segar dan percaya diri</p>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Fashion Pria">
+                <div class="category-overlay">
+                    <h3>Fashion Pria</h3>
+                    <p>Pakaian dan aksesoris modern untuk gaya maskulin yang elegan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk Unggulan -->
+    <section class="featured" id="featured">
+        <div class="featured-container">
+            <h2 class="section-title">Produk Unggulan</h2>
+            <div class="product-grid" id="productGrid">
+                <!-- Produk akan ditambahkan melalui JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Fitur Toko -->
+    <section class="features" id="features">
+        <h2 class="section-title">Mengapa GentleMen?</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-stopwatch"></i>
+                </div>
+                <h3>Belanja Cepat & Simple</h3>
+                <p>Dirancang khusus untuk pria sibuk yang ingin berbelanja dengan cepat dan efisien tanpa menghabiskan waktu.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-gem"></i>
+                </div>
+                <h3>Kurasi Produk Premium</h3>
+                <p>Setiap produk dipilih dengan teliti untuk memastikan kualitas terbaik dan sesuai kebutuhan pria modern.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-tag"></i>
+                </div>
+                <h3>Harga Transparan</h3>
+                <p>Tidak ada harga tersembunyi. Semua harga ditampilkan dengan jelas dan kompetitif.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-shipping-fast"></i>
+                </div>
+                <h3>Pengiriman Cepat</h3>
+                <p>Pesanan diproses dengan cepat dan dikirim tepat waktu agar Anda bisa segera menikmati produk.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="about">
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwIDBDOC45NiAwIDAgOC45NiAwIDIwQzAgMzEuMDQgOC45NiA0MCAyMCA0MEMzMS4wNCA0MCA0MCAzMS4wNCA0MCAyMEM0MCA4Ljk2IDMxLjA0IDAgMjAgMFpNMjUgMzFMMjUgMjVIMzFMMzEgMTVIMjVMMjUgOUgxNUwxNSAxNUg5TDkgMjVIMTVMMzEgMzFaIiBmaWxsPSIjRDRBRjM3Ii8+Cjwvc3ZnPgo=" alt="G Logo">
+                    </div>
+                    <h3>GENTLEMEN</h3>
+                </div>
+                <p>Startup retail & digital store yang fokus menyediakan kebutuhan pria dalam satu ekosistem dengan kurasi produk premium dan pengalaman belanja maskulin yang efisien.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Kategori</h3>
+                <a href="#categories">Alat Olahraga</a>
+                <a href="#categories">Skincare Pria</a>
+                <a href="#categories">Fashion Pria</a>
+                <a href="#featured">Aksesoris</a>
+                <a href="#featured">Grooming</a>
+            </div>
+            <div class="footer-column">
+                <h3>Bantuan</h3>
+                <a href="#" id="faqLink">FAQ</a>
+                <a href="#" id="shippingLink">Pengiriman</a>
+                <a href="#" id="returnsLink">Pengembalian</a>
+                <a href="#" id="contactLink">Kontak Kami</a>
+                <a href="#" id="privacyLink">Kebijakan Privasi</a>
+            </div>
+            <div class="footer-column">
+                <h3>Kontak</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</p>
+                <p><i class="fas fa-phone"></i> +62 21 1234 5678</p>
+                <p><i class="fas fa-envelope"></i> info@gentlemenstore.id</p>
+                <p><i class="fas fa-clock"></i> Buka setiap hari 09:00 - 21:00 WIB</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 GentleMen Store. All rights reserved. Designed for modern gentlemen.</p>
+        </div>
+    </footer>
+
+    <!-- Modal Keranjang -->
+    <div class="overlay" id="overlay"></div>
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-header">
+            <h3>Keranjang Belanja</h3>
+            <button class="close-cart" id="closeCart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Item keranjang akan ditambahkan melalui JavaScript -->
+            <p class="empty-cart-message" id="emptyCartMessage">Keranjang belanja Anda masih kosong.</p>
+        </div>
+        <div class="cart-summary">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">Rp 0</span>
+            </div>
+            <div class="cart-actions">
+                <button class="continue-shopping" id="continueShopping">Lanjut Belanja</button>
+                <button class="checkout-btn" id="checkoutBtn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="checkout-modal" id="checkoutModal">
+        <div class="checkout-container">
+            <div class="checkout-header">
+                <h2>Checkout</h2>
+                <button class="close-checkout" id="closeCheckout">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="checkout-content">
+                <div class="checkout-steps">
+                    <div class="step active" data-step="1">
+                        <span>1</span>
+                        <p>Informasi Pengiriman</p>
+                    </div>
+                    <div class="step" data-step="2">
+                        <span>2</span>
+                        <p>Metode Pembayaran</p>
+                    </div>
+                    <div class="step" data-step="3">
+                        <span>3</span>
+                        <p>Konfirmasi</p>
+                    </div>
+                </div>
+                
+                <!-- Step 1: Informasi Pengiriman -->
+                <div class="checkout-step active" id="step1">
+                    <h3>Informasi Pengiriman</h3>
+                    <form id="shippingForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Nama Lengkap</label>
+                                <input type="text" id="fullName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Nomor Telepon</label>
+                                <input type="tel" id="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Alamat Lengkap</label>
+                            <textarea id="address" rows="3" required></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">Kota</label>
+                                <input type="text" id="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="postalCode">Kode Pos</label>
+                                <input type="text" id="postalCode" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="shippingMethod">Metode Pengiriman</label>
+                            <select id="shippingMethod">
+                                <option value="regular">Regular (3-5 hari) - Rp 15.000</option>
+                                <option value="express">Express (1-2 hari) - Rp 30.000</option>
+                                <option value="sameDay">Same Day - Rp 50.000</option>
+                            </select>
+                        </div>
+                        <button type="button" class="next-step" data-next="2">Lanjut ke Pembayaran</button>
+                    </form>
+                </div>
+                
+                <!-- Step 2: Metode Pembayaran -->
+                <div class="checkout-step" id="step2">
+                    <h3>Pilih Metode Pembayaran</h3>
+                    <div class="payment-methods">
+                        <div class="payment-method active" data-method="bankTransfer">
+                            <i class="fas fa-university"></i>
+                            <span>Transfer Bank</span>
+                        </div>
+                        <div class="payment-method" data-method="eWallet">
+                            <i class="fas fa-wallet"></i>
+                            <span>E-Wallet</span>
+                        </div>
+                        <div class="payment-method" data-method="creditCard">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Kartu Kredit</span>
+                        </div>
+                        <div class="payment-method" data-method="cod">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <span>COD (Bayar di Tempat)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-details" id="bankTransferDetails">
+                        <h4>Transfer Bank</h4>
+                        <div class="bank-accounts">
+                            <div class="bank-account">
+                                <strong>BCA</strong>
+                                <p>1234 5678 9012</p>
+                                <p>PT GentleMen Store Indonesia</p>
+                            </div>
+                            <div class="bank-account">
+                                <strong>Mandiri</strong>
+                                <p>9876 5432 1098</p>
+                                <p>PT GentleMen Store Indonesia</p>
+                            </div>
+                            <div class="bank-account">
+                                <strong>BNI</strong>
+                                <p>5678 9012 3456</p>
+                                <p>PT GentleMen Store Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-details" id="eWalletDetails" style="display: none;">
+                        <h4>E-Wallet</h4>
+                        <div class="ewallet-options">
+                            <div class="ewallet-option">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Logo_ovo_purple.svg/1200px-Logo_ovo_purple.svg.png" alt="OVO">
+                                <span>OVO</span>
+                            </div>
+                            <div class="ewallet-option">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Logo_dana_blue.svg/2560px-Logo_dana_blue.svg.png" alt="DANA">
+                                <span>DANA</span>
+                            </div>
+                            <div class="ewallet-option">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Gopay_logo.svg/2560px-Gopay_logo.svg.png" alt="GoPay">
+                                <span>GoPay</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="order-summary">
+                        <h4>Ringkasan Pesanan</h4>
+                        <div class="summary-item">
+                            <span>Subtotal</span>
+                            <span id="summarySubtotal">Rp 0</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Ongkos Kirim</span>
+                            <span id="summaryShipping">Rp 15.000</span>
+                        </div>
+                        <div class="summary-item total">
+                            <span>Total</span>
+                            <span id="summaryTotal">Rp 0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="step-buttons">
+                        <button type="button" class="prev-step">Kembali</button>
+                        <button type="button" class="next-step" data-next="3">Lanjut ke Konfirmasi</button>
+                    </div>
+                </div>
+                
+                <!-- Step 3: Konfirmasi -->
+                <div class="checkout-step" id="step3">
+                    <h3>Konfirmasi Pesanan</h3>
+                    <div class="confirmation-details">
+                        <div class="detail-section">
+                            <h4>Informasi Pengiriman</h4>
+                            <div id="confirmShipping"></div>
+                        </div>
+                        <div class="detail-section">
+                            <h4>Metode Pembayaran</h4>
+                            <div id="confirmPayment"></div>
+                        </div>
+                        <div class="detail-section">
+                            <h4>Ringkasan Pesanan</h4>
+                            <div id="confirmOrder"></div>
+                        </div>
+                    </div>
+                    <div class="terms">
+                        <input type="checkbox" id="agreeTerms" required>
+                        <label for="agreeTerms">Saya menyetujui <a href="#">Syarat dan Ketentuan</a> serta <a href="#">Kebijakan Privasi</a> GentleMen Store</label>
+                    </div>
+                    <div class="step-buttons">
+                        <button type="button" class="prev-step">Kembali</button>
+                        <button type="button" id="confirmOrderBtn">Buat Pesanan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Login/Register -->
+    <div class="auth-modal" id="authModal">
+        <div class="auth-container">
+            <div class="auth-header">
+                <h2 id="authTitle">Masuk ke Akun Anda</h2>
+                <button class="close-auth" id="closeAuth">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login">Masuk</button>
+                <button class="auth-tab" data-tab="register">Daftar</button>
+            </div>
+            
+            <!-- Login Form -->
+            <div class="auth-form active" id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" placeholder="email@contoh.com">
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="••••••••">
+                    <a href="#" class="forgot-password">Lupa password?</a>
+                </div>
+                <button class="auth-button" id="loginButton">Masuk</button>
+                <div class="auth-divider">
+                    <span>atau masuk dengan</span>
+                </div>
+                <div class="social-login">
+                    <button class="social-btn google">
+                        <i class="fab fa-google"></i> Google
+                    </button>
+                    <button class="social-btn facebook">
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Register Form -->
+            <div class="auth-form" id="registerForm">
+                <div class="form-group">
+                    <label for="registerName">Nama Lengkap</label>
+                    <input type="text" id="registerName" placeholder="Nama lengkap">
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" placeholder="email@contoh.com">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="registerPassword">Password</label>
+                        <input type="password" id="registerPassword" placeholder="••••••••">
+                    </div>
+                    <div class="form-group">
+                        <label for="registerConfirm">Konfirmasi Password</label>
+                        <input type="password" id="registerConfirm" placeholder="••••••••">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="registerPhone">Nomor Telepon</label>
+                    <input type="tel" id="registerPhone" placeholder="0812 3456 7890">
+                </div>
+                <button class="auth-button" id="registerButton">Daftar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Search -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-modal-content">
+            <div class="search-header">
+                <h3>Cari Produk</h3>
+                <button class="close-search" id="closeSearch">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="search-input-container">
+                <input type="text" id="searchInput" placeholder="Cari produk...">
+                <button id="searchButton"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="search-results" id="searchResults">
+                <!-- Hasil pencarian akan ditampilkan di sini -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Container -->
+    <div id="notificationContainer"></div>
+
+    <!-- Chatbot Button -->
+    <div class="chatbot-container">
+        <a href="https://t.me/GentleMinBot" target="_blank" class="chatbot-button" id="chatbotButton">
+            <i class="fab fa-telegram-plane"></i>
+            <span class="chatbot-tooltip">Butuh bantuan? Chat dengan kami di Telegram</span>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
